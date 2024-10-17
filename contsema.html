@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SEMAFORO DUPLO E CONTADOR</title>
+</head>
+<body>
+    <nav>
+        <a href ="index.html">Home</a>
+        <a href="contsema.html">Contador e semaforo duplo</a>
+        <a href="contagemc.html">Contagem Crescente</a>
+        <a href="contagem.html">Contagem Descrescente</a>
+        <br>
+        <a href="projetotk.html">Semaforo Simples Tinkercad</a>
+        <a href="projetokc.html">Semaforo Duplo Tinkercad  </a>
+        <a href="arduino.html">Semaforo Simples Arduíno</a>
+        <a href="arduinots.html">Semaforo Duplo Arduíno</a>
+    </nav>
+    <h1>Semaforo Duplo realizado + Contador </h1>
+    <div>
+        <img class="mgi" src="CONTDUPLA.jpg" alt=""> <br>
+        <h1>Códigos C++</h1>
+        <img src="CONTDUPLA.jpg" alt=""> 
+        <p>
+          // C++ code
+//
+int i = 0;
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(1, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(0, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+}
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, HIGH);
+  digitalWrite(1, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(1, LOW);
+  digitalWrite(9, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(13, HIGH);
+  digitalWrite(1, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(0, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  digitalWrite(8, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(6, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(3, LOW);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(7, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(6, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(5, LOW);
+  digitalWrite(2, LOW);
+  digitalWrite(3, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(7, LOW);
+  digitalWrite(2, HIGH);
+  digitalWrite(5, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(4, LOW);
+  digitalWrite(6, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(5, LOW);
+  digitalWrite(4, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(2, HIGH);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+        </p>
+    </div>
+</body>
+</html>
